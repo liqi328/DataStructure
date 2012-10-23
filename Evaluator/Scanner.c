@@ -77,7 +77,9 @@ static int _getNextToken(Scanner *scanner){
 	}else if(scanner->currentChar == EOE){
 		scanner->currentToken.type = NULL_TOKEN;
 	}else{
+		scanner->currentToken.type = UNKNOMN;
 		initToken(&scanner->currentToken, scanner->currentChar);
+		_nextChar(scanner);
 	}
 	return 1;
 }
@@ -85,7 +87,7 @@ static int _getNextToken(Scanner *scanner){
 static TokenValueType _getTokenValue(Scanner *scanner){
 	TokenValueType num = 0;
 	while(isdigit(scanner->currentChar)){
-		num += num * 10 + (TokenValueType)scanner->currentChar;
+		num = num * 10 + (scanner->currentChar - '0');
 		_nextChar(scanner);
 	}
 	return num;

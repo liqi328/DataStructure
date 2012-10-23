@@ -30,10 +30,10 @@ static int _makeType(Token *t){
 }
 
 int initToken(Token *t, TokenValueType value){
+	t->value = value;
 	if(t->type != NUMBER){
 		_makeType(t);
 	}
-	t->value = value;
 	return 1;
 }
 

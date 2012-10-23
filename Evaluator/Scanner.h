@@ -14,10 +14,10 @@
 
 
 typedef struct{
-	char sourceStr[MAX_LENGTH];
 	int index;
 	char currentChar;
 	Token currentToken;
+	char sourceStr[MAX_LENGTH];
 }Scanner;
 
 
