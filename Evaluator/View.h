@@ -8,6 +8,6 @@
 #ifndef VIEW_H_
 #define VIEW_H_
 
-
+extern int runEvaluator();
 
 #endif /* VIEW_H_ */

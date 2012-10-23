@@ -8,12 +8,14 @@
 
 #include <stdio.h>
 #include "./test/test.h"
-
+#include "./Evaluator/View.h"
 
 
 int main(){
-	/*testStack();*/
+	/*testStack();
 	testMinStack();
+	runEvaluator();*/
+	testScanner();
 	return 1;
 }
 

@@ -12,5 +12,6 @@ extern int testArrayList();
 extern int testLinkedList();
 extern void testStack();
 extern void testMinStack();
+extern void testScanner();
 
 #endif /* TEST_H_ */
