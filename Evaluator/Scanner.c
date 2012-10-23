@@ -20,7 +20,7 @@ static int _nextChar(Scanner *scanner);
 static int _getNextToken(Scanner *scanner);
 static TokenValueType _getTokenValue(Scanner *sanner);
 
-char EOE = ';';
+char EOE = '#';
 
 int initScanner(Scanner *scanner, const char *source){
 	strncpy(scanner->sourceStr, source, MAX_LENGTH - 1);
@@ -36,7 +36,7 @@ int hasNextToken(const Scanner *scanner){
 }
 
 Token nextToken(Scanner *scanner){
-	Token tmp = {.type = NULL_TOKEN,.value = 0};
+	Token tmp = {.type = NULL_TOKEN,.value = EOE};
 	if(!hasNextToken(scanner)){
 		printf("no more tokens.\n");
 	}else{

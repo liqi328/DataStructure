@@ -8,6 +8,8 @@
 #ifndef EVALUATOR_H_
 #define EVALUATOR_H_
 
+typedef struct{
 
+}Evaluator;
 
 #endif /* EVALUATOR_H_ */

@@ -14,8 +14,9 @@
 int main(){
 	/*testStack();
 	testMinStack();
-	runEvaluator();*/
-	testScanner();
+	testScanner();*/
+	runEvaluator();
+
 	return 1;
 }
 

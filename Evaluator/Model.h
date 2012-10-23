@@ -8,6 +8,7 @@
 #ifndef MODEL_H_
 #define MODEL_H_
 
+
 extern char * formatExpression(char * s);
 extern double evaluateExpression(char *s);
 extern int evaluationStatus();
