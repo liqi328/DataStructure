@@ -44,6 +44,7 @@ Token nextToken(Scanner *scanner){
 		_getNextToken(scanner);
 	}
 
+
 	return tmp;
 }
 
